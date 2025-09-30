@@ -2,12 +2,15 @@ package datastrcture;
 
 import java.lang.foreign.ValueLayout.OfBoolean;
 import java.net.Authenticator;
+import java.util.Iterator;
 import java.util.Random;
 
 import oopmodeling.Planet;
 
 public class Arraytest {
 
+	private static void unaryOperatorsTest() {
+		
 	public static void main(String[] args) {
 
 		sumup();
@@ -21,6 +24,22 @@ public class Arraytest {
 		while(true) {
 			break;
 		}
+		
+		float[] salaries = {234.324f,55.38f,122.21f, 2901.45f};
+		//{234.324f,55.38f,122.21f, 2901.45f};
+		/**
+		 * increment the value of the first data by stored in the array 
+		 */
+		salaries[0]=salaries[0]+10;
+		System.out.println(salaries[0]);
+		salaries[1]=salaries[1]+10;
+		salaries[2]=salaries[2]+10;
+		salaries[3]=salaries[3]+10;
+		//Automatizacion del proceso con bucles 
+		for (int i = 0; i < salaries.length; i++) {
+			
+			
+		}
 		String[] names = { "Pablo", "Exel" };
 
 		Planet[] planets = { new Planet(), new Planet() };
@@ -28,6 +47,8 @@ public class Arraytest {
 		System.out.println(names[1]);
 
 		System.out.println(names[1]);
+		
+		
 	}
 	/**
 	 * This method is used to find the maximum and minimum values
