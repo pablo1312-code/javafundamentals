@@ -9,7 +9,21 @@ public class OperatorsTest {
 		arithmeticOperationTest();
 		unaryOperatorsTest();
 		//assignment operators test
+		assignmentOperatorsTest();
 			
+	}
+
+	private static void assignmentOperatorsTest() {
+		int number1 = 3; 
+		int number2 = 20;
+		float result = number1+ number2; 
+		System.out.println(result);
+		result+= number1;//result = result+ number 1
+		System.out.println(result);
+		result /= number1;//result = result / number1;
+		System.out.println(result);
+		// TODO Auto-generated method stub
+		
 	}
 
 	private static void unaryOperatorsTest() {
