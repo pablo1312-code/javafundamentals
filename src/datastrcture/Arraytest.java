@@ -7,7 +7,6 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Random;
 
-import com.sun.org.apache.bcel.internal.generic.AALOAD;
 
 import oopmodeling.Planet;
 
@@ -116,29 +115,6 @@ public class Arraytest {
     	}
     }
 	private static void incrementSalary() {
-	}
-
-	private static void switchValues(int[] arr, int index1, int index2) {
-		
-		if (arr==null) {
-			return;
-		}
-		//"||"this is operator "or" used to add multiple parallel conditions
-		//if one of the conditions is true, the statement inside the if body 
-		//will be executed 
-		if(index1< 0 || index2< 0) {
-			return;
-		}
-		//>= means greater or equal
-		//The index of the last element in an array is arr.length -1
-		if(index1 >= arr.length || index2 < arr.length) {
-			return;
-			
-		}
-		int dato = arr[index1];
-		arr[index1] = arr[index2];
-		arr[index2] = dato;
-
 		float[] salaries = { 234.324f, 55.38f, 122.21f, 2901.45f };
 		// {234.324f,55.38f,122.21f, 2901.45f};
 		/**
@@ -161,6 +137,31 @@ public class Arraytest {
 
 		System.out.println(names[1]);
 
+		
+	}
+
+	public static void switchValues(int[] arr, int index1, int index2) {
+		
+		if (arr==null) {
+			return;
+		}
+		//"||"this is operator "or" used to add multiple parallel conditions
+		//if one of the conditions is true, the statement inside the if body 
+		//will be executed 
+		if(index1< 0 || index2< 0) {
+			return;
+		}
+		//>= means greater or equal
+		//The index of the last element in an array is arr.length -1
+		if(index1 >= arr.length || index2 >= arr.length) {
+			return;
+			
+		}
+		int dato = arr[index1];
+		arr[index1] = arr[index2];
+		arr[index2] = dato;
+
+		
 	}
 
 	/**
