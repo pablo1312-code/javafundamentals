@@ -7,7 +7,6 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Random;
 
-import com.sun.org.apache.bcel.internal.generic.AALOAD;
 
 import oopmodeling.Planet;
 
