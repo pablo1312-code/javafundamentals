@@ -30,24 +30,24 @@ public class MultiDimensionalArrayTest {
 
 
         }
-        for(int i = 0; i< rows; i++) {
-            for(int j = 0; j< columns; j++) {
-                world[i][j]= 1;
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                world[i][j] = 1;
             }
         }
 
-        for(int i= 0; i<rows; i++) {
-            for(int j= 0; j <columns; j++) {
-                System.out.print(world [i][j] + " ");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                System.out.print(world[i][j] + " ");
             }
             System.out.println();
         }
 
         int depth = 3;
-        int[][][] MinecraftWorld = new int [rows][columns][depth];
-        for(int i = 0; i< MinecraftWorld.length; i++) {
-            for (int j = 0; j <MinecraftWorld[i].length; j++) {
-                for(int k = 0; k<MinecraftWorld[i][j].length; k++) {//depth
+        int[][][] MinecraftWorld = new int[rows][columns][depth];
+        for (int i = 0; i < MinecraftWorld.length; i++) {
+            for (int j = 0; j < MinecraftWorld[i].length; j++) {
+                for (int k = 0; k < MinecraftWorld[i][j].length; k++) {//depth
                     MinecraftWorld[i][j][k] = i + j + k;
 
                 }
@@ -56,5 +56,42 @@ public class MultiDimensionalArrayTest {
 
         System.out.println(MinecraftWorld[0][0][0]);
         System.out.println(MinecraftWorld[4][4][2]);
+
+        System.out.println("The first depth");
+        for (int i = 0; i < MinecraftWorld.length; i++) {
+            for (int j = 0; j < MinecraftWorld[i].length; j++) {
+                System.out.print(MinecraftWorld[i][j][0] + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println("The second depth");
+        for (int i = 0; i < MinecraftWorld.length; i++) {
+            for (int j = 0; j < MinecraftWorld[i].length; j++) {
+                System.out.print(MinecraftWorld[i][j][1] + " ");
+            }
+            System.out.println();
+        }
+        System.out.println("The third depth");
+        for (int i = 0; i < MinecraftWorld.length; i++) {
+            for (int j = 0; j < MinecraftWorld[i].length; j++) {
+                System.out.print(MinecraftWorld[i][j][2] + " ");
+            }
+            System.out.println();
+        }
+
+        for (int k = 0; k < depth; k++) {
+            System.out.println("print elements in " + k +"the depth" );
+            for (int i = 0; i < MinecraftWorld.length; i++) {
+                for (int j = 0; j < MinecraftWorld[i].length; j++) {
+                    System.out.print(MinecraftWorld[i][j][k] + " ");
+                }
+                System.out.println();
+            }
+        }
+
     }
 }
+
+
+
