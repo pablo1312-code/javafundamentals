@@ -10,6 +10,11 @@ import java.util.Random;
 
 import oopmodeling.Planet;
 
+/**
+ * 
+ * @author panblo
+ * 21 nov 2025
+ */
 public class Arraytest {
 
 	private static void unaryOperatorsTest() {

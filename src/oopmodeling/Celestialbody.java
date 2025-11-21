@@ -8,7 +8,8 @@ public float mass = 45;
 
 //Public: accesible por cualquiera
 
-float size = 28; 
+float size = 28;
+
 
 //Private: solo para clase 
   
