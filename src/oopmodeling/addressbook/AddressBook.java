@@ -36,7 +36,15 @@ public class AddressBook {
 		contacts.add(contact);
 	}
 	
-	public void removeContact(String name) {
+	public boolean removeContact(String name) {
+		//1 a loop to find the position of the contact in the array
+		//Contact[] eles = contacts.getAll();
+		for (int i = 0; i<contacts.size(); i++)
+		    if
+			//2 remove the contact by its position in the array 
+		contacts.remove(0);
+		return false;
+		
 		
 	}
 }

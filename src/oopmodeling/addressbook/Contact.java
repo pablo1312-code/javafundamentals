@@ -14,6 +14,10 @@ public class Contact {
 			this.name = name;
 			 
 	}
+	public Contact() {
+		// TODO Auto-generated constructor stub
+	
+	}
 	public String getPhoneNumber() {
 		return phoneNumber;
 	}
