@@ -68,18 +68,24 @@ public class FlexibleArray<E>{
     	//step 1: eliminate the element at position passed by the parameter
     	elements[i] = null;
 //    	elements[i] = elements[i+1];
-//    	elements[i+1] = elements[i+2;
-    	size --;
+//    	elements[i+1] = elements[i+2];
+//    	elements[i+2] = elements[i+3];
+//    	elements[i+3] = elements[i+4];
+    	//...
+        //size - i - 1 is the number of elements that we have to move 
     	for (int j = 0; j < elements.length; j++) {
-			
+    		elements[i+j] = elements[i+j+1];
 		}
+    	size --;
+    	
+    	
     }
 
     public int size() {
         return size;
     }
     
-    public E[] getAll() {
-    	return elements;
+    public E get(int index) {
+    	return elements[index];
     }
 }

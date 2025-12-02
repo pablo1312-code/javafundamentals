@@ -52,7 +52,7 @@ public class ContactApp {
 	}
 
 	private static void showContacts() {
-		// TODO Auto-generated method stub
+	  addressBook.showContacts();
 		
 	}
 

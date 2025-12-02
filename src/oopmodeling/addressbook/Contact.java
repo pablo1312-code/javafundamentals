@@ -42,6 +42,10 @@ public class Contact {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
+	public String toString() {
+		return "name:" + name + " phone number: " + phoneNumber;
+	}
 	//Atributes or fields of the class
 	private String phoneNumber;
 	private String name;

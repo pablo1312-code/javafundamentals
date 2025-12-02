@@ -29,6 +29,10 @@ public class AddressBook {
 	}
 	//behaves 
 	public void showContacts() {
+		for (int i = 0; i<contacts.size(); i++) {
+			System.out.println(contacts.get(i).toString());
+		}
+			
 	
 	}
 	
@@ -40,7 +44,10 @@ public class AddressBook {
 		//1 a loop to find the position of the contact in the array
 		//Contact[] eles = contacts.getAll();
 		for (int i = 0; i<contacts.size(); i++)
-		    if
+		    if(contacts.get(i).getName().equals(name)) {
+		    	contacts.remove(i);
+		    	return true; 
+		    }
 			//2 remove the contact by its position in the array 
 		contacts.remove(0);
 		return false;
