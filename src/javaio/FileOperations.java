@@ -23,11 +23,19 @@ public class FileOperations {
 		
 		
 		createFile(file);
-		//create directory using absolute path 
-		File absoluteDir = new File(System.getProperty("user.dir") + "/logs/user.log");
-		absoluteDir.mkdir();
+		
+		
+		createAbsolutPath();
+		
 	}
 	
+	private static void createAbsolutPath() {
+		//create directory using absolute path 
+				File absoluteDir = new File(System.getProperty("user.dir") + "/logs/user.log");
+				absoluteDir.mkdir();	
+		
+	}
+
 	private static void createPath(File file) {
 		System.out.println(file.isAbsolute());
 		
