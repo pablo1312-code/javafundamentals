@@ -1,7 +1,9 @@
 package javaio;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.ReadOnlyFileSystemException;
 /**
  * 
  * @author panblo
@@ -27,8 +29,32 @@ public class FileOperations {
 		
 		createAbsolutPath();
 		
+		writeFile();
+		
+		ReadFile();
+		
 	}
 	
+	private static void ReadFile() {
+	
+		
+	}
+
+	private static void writeFile() {
+		try {
+			FileWriter writer = new FileWriter("log.txt");
+			writer.write("Black holes");
+			writer.write("Pollas en vinagre");
+			writer.write(4);
+			//Close the writer and refresh the data to the file 
+			writer.close();
+			//Refresh data we have written to the file 
+			//writer.flush();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
 	private static void createAbsolutPath() {
 		//create directory using absolute path 
 				File absoluteDir = new File(System.getProperty("user.dir") + "/logs/user.log");
