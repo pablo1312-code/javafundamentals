@@ -1,6 +1,8 @@
 package javaio;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.ReadOnlyFileSystemException;
@@ -36,7 +38,18 @@ public class FileOperations {
 	}
 	
 	private static void ReadFile() {
-	
+	     try {
+			FileReader reader = new FileReader("log.txt");
+			
+			System.out.println((char)reader.read());
+			System.out.println((char)reader.read());
+			System.out.println((char)reader.read());
+			System.out.println((char)reader.read());
+			
+			
+		 } catch (IOException e) {
+			e.printStackTrace();
+		 }
 		
 	}
 
