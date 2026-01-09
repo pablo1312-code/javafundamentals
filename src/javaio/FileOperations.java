@@ -64,9 +64,23 @@ public class FileOperations {
 		try {
 			System.out.println();
 			System.out.println("buffered reader");
+			//Wrap an instance of @link{FileREader} in an instance of @link{BufferedReader}
+			//so we can manipulate the data in another way in our case 
+			//reading the data line by line 
 			BufferedReader br=
-					new BufferedReader(new FileReader("log.txt"));
-			System.out.println(br.readLine());
+					new BufferedReader(new FileReader("contacts.txt"));
+			//read a line from the file
+			//System.out.println(br.readLine());
+			String data;
+			do {
+				//define what we want to do 
+				//read a line 
+			    data = br.readLine();
+				System.out.println(data);	
+			}
+			while(data != null);
+			
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
