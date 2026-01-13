@@ -6,9 +6,13 @@ package oopmodeling.addressbook;
  * 26 nov 2025
  */
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
-import datastrcture.FlexibleArray; 
+import datastrcture.FlexibleArray;
+import utils.FileUtil; 
 /**
  * This class is used to manage a list of contact objects 
  * @author panblo
@@ -38,7 +42,17 @@ public class AddressBook {
 	
 	public void addContact(Contact contact) {
 		contacts.add(contact);
+		
+		FileUtil.writeTofile(contact.getName() + ";" + contact.getEmail(), "contacts.txt");
+		
 	}
+	
+
+		
+		
+		
+	
+	
 	
 	public boolean removeContact(String name) {
 		//1 a loop to find the position of the contact in the array

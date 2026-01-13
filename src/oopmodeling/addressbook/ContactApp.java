@@ -1,6 +1,8 @@
 package oopmodeling.addressbook;
 
 import java.util.Scanner;
+
+import sun.security.provider.JavaKeyStore.CaseExactJKS;
 /**
  * The class used to interact with the users 
  * @author panblo
@@ -36,6 +38,13 @@ public class ContactApp {
 		else {//when option is not 1, 2, or 4 
 			removeContact();
 		}
+		
+//		switch(option){
+//		case: 1
+//		case: 2
+//		}
+		
+		
 
 	
 		}
