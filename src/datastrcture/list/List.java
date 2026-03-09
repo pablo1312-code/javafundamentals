@@ -5,7 +5,8 @@ package datastrcture.list;
  * @author panblo
  * 4 mar 2026
  */
-public interface List {
+public interface List<E> {
+	
 	
 	/**
 	 * add an element to the list 
