@@ -27,6 +27,8 @@ public interface List<E> {
 	 * Print all the elements in the list 
 	 */
 	public void printList();
+	E removeLast();
+	void printlist();
 
 	
 }
