@@ -11,8 +11,13 @@ public class Planet extends Celestialbody {
         //constructor with two parameters
         public Planet(double mass, String nameOf){
         }
-}
+        
+
+        
+
         //constructor with three parameters
         public Planet(double mass, String name, float radius){
 
+        	
+        } 
 }
