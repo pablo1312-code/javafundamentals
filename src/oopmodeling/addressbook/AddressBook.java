@@ -68,4 +68,8 @@ public class AddressBook {
 		
 		
 	}
+	public char[] getPhoneNumber() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
